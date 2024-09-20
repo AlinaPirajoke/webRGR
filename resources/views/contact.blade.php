@@ -20,8 +20,8 @@
 
 <main id="contactmain">
     <p>@lang('main.could_find')<br>
-        Instagram - <a href="https://www.instagram.com">jewelleryShop</a> <br>
-        Telegram - <a href="https://web.telegram.org">JewelleryShopHere</a></p>
+        Vk - <a href="https://www.instagram.com">MusicStore</a> <br>
+        Telegram - <a href="https://web.telegram.org">MusicStoreTg</a></p>
 
     <container id="contactform">
         <form action="{{route('send.email')}}" method="post">
@@ -42,7 +42,7 @@
 
 <container class="maps">
     <h1>@lang('main.on_maps')</h1>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ebc470a1ac025f43d036e76443c832f07bc86221bdeeabf1fc39e2d9a4bd895&amp;width=1280&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad004631ad8566d13204b9965c6d8f82603c70fba5e38a4d6f1d8f20ff5b469f5&amp;width=100%25&amp;height=404&amp;lang=ru_RU&amp;scroll=true"></script>
 </container>
 
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{--    @vite(['resources/css/catalog.css'])--}}
+    @vite(['resources/css/catalog.css'])
     <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
     <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
     <title>log in</title>
@@ -30,45 +30,45 @@
         <form method="post" action="{{ route('admin.add_product') }}" enctype="multipart/form-data">
             @csrf
             <div>
-                <input name="name" type="text" placeholder="@lang('admin.name_product')">
+                <input class="inputcontact" name="name" type="text" placeholder="@lang('admin.name_product')">
             </div>
             <div>
-                <textarea id="ckeditor" name="subtitle" placeholder="@lang('admin.description')">
+                <textarea class="inputcontact" id="ckeditor" name="subtitle" placeholder="@lang('admin.description')">
                     </textarea>
             </div>
             <div>
                 <select name="category">
-                    <option value="chain">
-                        @lang('main.chain')
+                    <option value="piano">
+                        @lang('main.piano')
                     </option>
-                    <option value="bracelet">
-                        @lang('main.bracelet')
+                    <option value="drum">
+                        @lang('main.drum')
                     </option>
-                    <option value="ring">
-                        @lang('main.ring')
+                    <option value="guitar">
+                        @lang('main.guitar')
                     </option>
-                    <option value="earrings">
-                        @lang('main.earrings')
+                    <option value="violin">
+                        @lang('main.violin')
                     </option>
                 </select>
             </div>
             <div>
-                <input name="price" type="text" placeholder="@lang('admin.price')">
+                <input class="inputcontact" name="price" type="text" placeholder="@lang('admin.price')">
             </div>
             <div>
-                <input name="quantity" type="number" min="1" placeholder="@lang('admin.count')">
+                <input class="inputcontact" name="quantity" type="number" min="1" placeholder="@lang('admin.count')">
             </div>
             <div>
-                <input name="popularity" type="number" min="1" max="10" placeholder="@lang('main.popularity')">
+                <input class="inputcontact" name="popularity" type="number" min="1" max="10" placeholder="@lang('main.popularity')">
             </div>
             <div>
-                <input name="name_en" type="text" placeholder="@lang('main.local_name')">
+                <input class="inputcontact" name="name_en" type="text" placeholder="@lang('main.local_name')">
             </div>
             <div>
-                <input name="subtitle_en" type="text" placeholder="@lang('main.local_sub')">
+                <input class="inputcontact" name="subtitle_en" type="text" placeholder="@lang('main.local_sub')">
             </div>
             <div>
-                <input name="image" type="file">
+                <input class="inputcontact" name="image" type="file">
             </div>
 
             <div>

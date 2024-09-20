@@ -7,7 +7,7 @@
     @vite(['resources/css/catalog.css'])
     <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
     <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
-    <title>jewellery shop _ catalog</title>
+    <title>shop catalog</title>
 </head>
 <body>
 
@@ -18,22 +18,23 @@
 <div class="greenscreen">
     <h1>@lang('admin.catalog')</h1>
 </div>
+<!-- 
 <container class="menucactalog">
     <a href="#new"><img  src="img\newpic.svg" alt=""></a>
     <container class="col">
         <container class="horiz">
-            <a href="#rings"><img  src="img\ringspic.svg" alt=""></a>
-            <a href="#earrings"><img  src="img\earringspic.svg" alt=""></a>
+            <a href="#piano"><img  src="img\pianopic.svg" alt=""></a>
+            <a href="#drums"><img  src="img\drumspic.svg" alt=""></a>
         </container>
         <container class="horiz">
-            <a href="#chain"><img  src="img\chainpic.svg" alt=""></a>
-            <a href="#bracelets"><img  src="img\braceletpic.svg" alt=""></a>
+            <a href="#violin"><img  src="img\violinpic.svg" alt=""></a>
+            <a href="#guitar"><img  src="img\braceletpic.svg" alt=""></a>
         </container>
     </container>
-</container>
-<div class="greenscreen">
+</container> -->
+<!-- <div class="greenscreen">
   <a href="{{ route('admin.add_product') }}"><button id="modal-btn1" class="butcontact">@lang('admin.add_item')</button></a>
-</div>
+</div> -->
 
 <!-- тут кнопочка для поднятия наверх -->
 <button id="scrollToTopButton" class="scroll-to-top-button">@lang('main.up')</button>
@@ -41,9 +42,8 @@
     @vite(['resources/js/scrollButton.js'])
 </script>
 
-<!-- кольца -->
-<div id="rings" class="product">
-    <h1 class="section_name">@lang('main.rings')</h1>
+<div id="piano" class="product">
+    <h1 class="section_name">@lang('main.piano')</h1>
     <div class="line"></div>
     <container class="item_block">
 
@@ -56,14 +56,13 @@
     </container>
 </div>
 
-<!-- сережки -->
-<div id="earrings" class="product">
-    <h1 class="section_name">@lang('main.earrings')</h1>
+<div id="drums" class="product">
+    <h1 class="section_name">@lang('main.drum')</h1>
     <div class="line"></div>
     <container class="item_block">
 
         @foreach($products as $product)
-            @if ($product->category === 'earrings')
+            @if ($product->category === 'drum')
                 @include('layout/cardAdmin', compact('product'))
             @endif
         @endforeach
@@ -71,14 +70,13 @@
     </container>
 </div>
 
-<!-- ОЖЕРЕЛЬЕ     -->
-<div id="chain" class="product">
-    <h1 class="section_name">@lang('main.chains')</h1>
+<div id="violin" class="product">
+    <h1 class="section_name">@lang('main.violin')</h1>
     <div class="line"></div>
     <container class="item_block">
 
         @foreach($products as $product)
-            @if ($product->category === 'chain')
+            @if ($product->category === 'violin')
                 @include('layout/cardAdmin', compact('product'))
             @endif
         @endforeach
@@ -86,9 +84,8 @@
     </container>
 </div>
 
-<!-- БРАСЛЕТЫ -->
-<div id="bracelets" class="product">
-    <h1 class="section_name">@lang('main.bracelets')</h1>
+<div id="guitar" class="product">
+    <h1 class="section_name">@lang('main.guitar')</h1>
     <div class="line"></div>
     <container class="item_block">
 
@@ -101,7 +98,6 @@
     </container>
 </div>
 
-<!-- новинки -->
 <div id="new" class="product">
     <h1 class="section_name">@lang('main.new')</h1>
     <div class="line"></div>

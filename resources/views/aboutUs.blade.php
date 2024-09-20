@@ -15,7 +15,7 @@
 </header>
 <main id="mainabout">
     <div class="left_right_pic_about_main">
-        <img id="handaboutbrand" src="img\aboutleft.svg" alt="">
+        <img id="handaboutbrand" src="img2\about1.jfif" alt="">
         <div id="infabout">
             <div id="textaboutbrand">
                 <p>@lang('main.title1')<br><br>
@@ -23,7 +23,7 @@
                     @lang('main.title3')</p>
             </div>
         </div>
-        <img id="chestaboutbrand" src="img\aboutright.svg" alt="">
+        <img id="chestaboutbrand" src="img2\about2.jfif" alt="">
     </div>
 </main>
 

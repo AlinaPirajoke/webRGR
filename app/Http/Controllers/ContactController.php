@@ -17,7 +17,7 @@ class ContactController extends Controller
 
         $mail = new ContactUs($mailData);
 
-        Mail::to('polina_yureva@mail.ru')->send($mail);
+        Mail::to('akaunteto@gmail.com')->send($mail);
         return redirect()->back()->with('email was send');
     }
 }
