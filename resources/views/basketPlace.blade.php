@@ -16,11 +16,14 @@
 <div class="greenscreen">
     <h1>@lang('main.checkout')</h1>
 </div>
+<div class="on_black">
+    <p>@lang('main.checkout1')</p>
+    <h1>@lang('main.point')</h1>
+</div>
 
 {{--<div id="modal" class="modal">--}}
 {{--    <div class="modal-content">--}}
-        <p>@lang('main.checkout1')</p>
-        <h1>@lang('main.point')</h1>
+        
         <form class="order_form" action="{{ route('basket.makeOrder') }}" method="POST">
             @csrf
             <div class="order_details">
